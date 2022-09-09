@@ -1,4 +1,7 @@
 <?php
+ //use output buffer end clean after improting this file
+ ob_start();
+
    $Brogrammers = array(
       array("id", "species", "type1", "type2", "ability", "hp", "attack", "defense"),
       array("1", "Bulbasaur", "Grass", "Poison", "Overgrow", "45", "49", "49"),
@@ -10,7 +13,7 @@
       array("7", "Squirtle", "Water", "N/A", "Torrent", "44", "48", "65"),
       array("8", "Wartortle", "Water", "N/A", "Torrent", "59", "63", "80"),
       array("9", "Blastoise", "Water", "N/A", "Torrent", "79", "83", "100"),
-      array("10", "Caterpie", "Bug", "N/A", "Shield Dust", "45", "30", "35"),
+      array("10", "Caterpie", "Bug", "N/A", "Shield Dust", "50", "20", "55"),
    );
 
    echo '$Brogrammers array = ' . print_r($Brogrammers, true);
@@ -26,7 +29,7 @@
       }
       echo '</br>';
    }
-
+   // custom arr print function
    // function pretty_print($arr)
    // {
    //    foreach ($arr as $key => $value) {
